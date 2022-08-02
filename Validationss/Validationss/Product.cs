@@ -15,8 +15,18 @@ namespace Validationss
         public int Count { get; set; }
         public double price { get; set; }
         public String Phoneno { get; set; }
+        public bool available{ get; set; }
+        public bool yes { get; set; }
+        public bool no { get; set; }
+        public bool female{ get; set; }
+        public bool male { get; set; }
+        public bool pay { get; set; }
+        public bool paypal { get; set; }
+        public String username { get; set; }
+        public String pass{ get; set; }
+
         //we use ststic because the list is shared for all object
-       static List<Product> products = new List<Product>();
+        static List<Product> products = new List<Product>();
 
         public void save()
         {

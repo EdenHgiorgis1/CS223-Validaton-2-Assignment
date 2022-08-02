@@ -9,3 +9,4 @@ C:\Users\hp\Documents\new\CS223-2-\Validationss\Validationss\obj\Debug\Validatio
 C:\Users\hp\Documents\new\CS223-2-\Validationss\Validationss\obj\Debug\Validationss.csproj.CoreCompileInputs.cache
 C:\Users\hp\Documents\new\CS223-2-\Validationss\Validationss\obj\Debug\Validationss.exe
 C:\Users\hp\Documents\new\CS223-2-\Validationss\Validationss\obj\Debug\Validationss.pdb
+C:\Users\hp\Documents\new\CS223-2-\Validationss\Validationss\obj\Debug\Validationss.Log.resources

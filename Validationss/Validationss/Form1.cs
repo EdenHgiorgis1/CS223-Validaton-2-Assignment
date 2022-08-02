@@ -13,9 +13,12 @@ namespace Validationss
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(String user)
         {
             InitializeComponent();
+           /* panelSelected.Height = btn_add.Height;
+            panelSelected.Top = btn_add.Top;*/
+            label8.Text = user;
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -57,6 +60,16 @@ namespace Validationss
                     p.Date = dtp_datepicker1.Value;
                     p.price = Convert.ToInt32(txt_Price.Text);
                     p.InventoryNo = txt_In.Text;
+                    p.available = checkBox1.Checked;
+                   /* p.yes = checkedListBox1.CheckedItems;
+                  
+                    p.available= checkedListBox1.CheckedItems;*/
+                    p.female = radioButton1.Checked;
+                    p.male= radioButton2.Checked;
+                    p.pay = radioButton3.Checked;
+                    p.paypal = radioButton4.Checked;
+                   
+
                     Regex r = new Regex(@"^[0-9]{3}-[0-9]{3}-[0-9]{3}$");
                     if (r.IsMatch(txt_PhoneNo.Text))
                     {
@@ -77,6 +90,7 @@ namespace Validationss
                     errorProvider1.SetError(txt_Count, " Count is required!");
                     MessageBox.Show("Can't insert null values. Try again please");
                 }
+
             } while (txt_Count.Text == null || 
                     txt_ObjectName.Text == null ||
                     txt_Number.Text == null ||
@@ -84,6 +98,17 @@ namespace Validationss
                     txt_Price.Text == null || 
                     txt_In.Text == null ||
                     txt_PhoneNo==null);
+
+
+            String message = "";
+            foreach(var item in checkedListBox1.CheckedItems)
+                {
+
+                item.ToString();
+                message +=item.ToString();
+
+            }
+            MessageBox.Show(message);
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -97,6 +122,21 @@ namespace Validationss
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
